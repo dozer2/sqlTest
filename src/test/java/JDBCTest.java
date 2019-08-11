@@ -16,19 +16,20 @@ public class JDBCTest {
     @BeforeAll
     public static void before(){
         statement=DatabaseService.getStatment();
-    }
+    }//присваивает Statement
 
     @AfterAll
     public static void after()
     {
         DatabaseService.closeConnection(DatabaseService.getConnection());
-    }
+    } //закрывает
 
     @Test
     public void allOwnerMustBeHaveCar() throws SQLException {
-     ResultSet resultSet=statement.executeQuery("select id_owner from car");
+     ResultSet resultSet=statement.executeQuery("select id_owner,name from car");
      while(resultSet.next()){
-      assertTrue(resultSet.getInt("id_owner")>0);
+         String name= resultSet.getString ("name");
+      assertTrue(resultSet.getInt("id_owner")>0, "Car with name".concat(name).concat("don`t have owner"));
      }
     }
 }
