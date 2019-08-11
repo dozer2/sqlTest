@@ -24,11 +24,14 @@ public class JDBCTest {
         DatabaseService.closeConnection(DatabaseService.getConnection());
     }
 
+
+
     @Test
     public void allOwnerMustBeHaveCar() throws SQLException {
-     ResultSet resultSet=statement.executeQuery("select id_owner from car");
+     ResultSet resultSet=statement.executeQuery("select id_owner, name from car");
      while(resultSet.next()){
-      assertTrue(resultSet.getInt("id_owner")>0);
+         String name= resultSet.getString("name") ;
+      assertTrue(resultSet.getInt("id_owner")>0, "car with name".concat(name).concat("dont have owner"));
      }
     }
 }
