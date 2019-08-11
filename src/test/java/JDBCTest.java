@@ -26,9 +26,10 @@ public class JDBCTest {
 
     @Test
     public void allOwnerMustBeHaveCar() throws SQLException {
-     ResultSet resultSet=statement.executeQuery("select id_owner from car");
-     while(resultSet.next()){
-      assertTrue(resultSet.getInt("id_owner")>0);
-     }
+        ResultSet resultSet=statement.executeQuery("select id_owner,name from car");
+        while(resultSet.next()){
+            String name= resultSet.getString("name");
+            assertTrue(resultSet.getInt("id_owner")>0,"Car with name ".concat(name).concat(" dont't have owner"));
+        }
     }
 }
