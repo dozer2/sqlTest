@@ -92,9 +92,21 @@ public class JDBCTest {
         Integer idowner = resultSet2.getInt("id_owner");
         Integer numberOfOwners = resultSet2.getInt("numberOfOwners");
 
-        if (numberOfOwners > 1) {
+        if (numberOfOwners > 1)
             assertSame("as", ownername);
-        }
+    }
 
+    @Test
+    public void check18thOwner() throws SQLException{
+
+        ResultSet resultSet3=statement.executeQuery("select owner.age, owner.ownername, car.name\n" +
+                "FROM owner\n" +
+                "LEFT join car on car.id_owner=owner.id\n" +
+                "--WHERE owner.age>=1;");
+
+        int age =resultSet3.getInt("age");
+        String owner=resultSet3.getString("ownername");
+
+            assertTrue(age>0,"Несовершеннолетний!  ".concat(owner).concat("  DETECTED"));
     }
 }
