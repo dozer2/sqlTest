@@ -78,7 +78,7 @@ public class JDBCTest {
         if (id_owner == 8 ){
             assertSame(3,count_cars);
         } else System.out.println("FAIL");
-
     }
+
 }
 
