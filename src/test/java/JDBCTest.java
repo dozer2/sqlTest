@@ -1,6 +1,7 @@
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.function.Executable;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -78,6 +79,40 @@ public class JDBCTest {
         if (id_owner == 8 ){
             assertSame(3,count_cars);
         } else System.out.println("FAIL");
+    }
+
+    @Test
+    public void allOwnersWhichNotEighteenYears() throws SQLException{
+        ResultSet resultSetTwo = statement.executeQuery("SELECT car.name, owner.name, owner.age" +
+                "FROM car" +
+                "LEFT JOIN owner on car.id_owner=owner.id" +
+                "WHERE owner.age < 18");
+
+        Integer age = resultSetTwo.getInt("age");
+        String name = resultSetTwo.getString("name");
+
+        while (resultSetTwo.next()){
+            assertTrue(age > 17, "Owners which not eight year ".concat(name));
+        }
+    }
+
+    @Test
+    public void insertData () throws SQLException{
+        boolean emptyId = true;
+        Long newId = 0L;
+        while (emptyId){
+            //ResultSet resultSetTwo = statement.executeQuery("SELECT max(owner.id) FROM owner");
+            newId = System.currentTimeMillis();
+            ResultSet resultSet = statement.executeQuery("SELECT id FROM owner where id =" + newId);
+            emptyId = resultSet.next();
+        }
+        Long finalNewId = newId;
+        assertThrows(SQLException.class, new Executable() {
+            @Override
+            public void execute() throws Throwable {
+                statement.execute(" insert into owner (name,id,age) values ('Vasya', " + finalNewId + ", 26);");
+            }
+        });
     }
 
 }

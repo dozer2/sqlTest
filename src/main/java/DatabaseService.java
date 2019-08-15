@@ -1,3 +1,5 @@
+import org.sqlite.SQLiteConfig;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -7,7 +9,9 @@ public class DatabaseService {
 
     public static Connection getConnection() {
         try {
-            return DriverManager.getConnection("jdbc:sqlite:src\\main\\resources\\qa.db");
+            SQLiteConfig config = new SQLiteConfig();
+            config.enforceForeignKeys(true);
+            return DriverManager.getConnection("jdbc:sqlite:src\\main\\resources\\qa.db",config.toProperties());
         } catch (SQLException e) {
             throw new RuntimeException(e.getLocalizedMessage());
         }
