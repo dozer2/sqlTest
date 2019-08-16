@@ -33,7 +33,7 @@ public class JDBCTest {
         }
     }
 
-    //Написать тест проверяющий есть ли машины у владельца
+    //Написать тест проверяющий есть ли машины у владелeц
     @Test
     public void whetherTheOwnerHasCars() throws SQLException {
         ResultSet resultSet = statement.executeQuery("SELECT owner.id, owner.name as owner, car.name\n" +
