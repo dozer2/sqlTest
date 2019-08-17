@@ -5,8 +5,6 @@ import java.sql.Statement;
 
 public class DatabaseService {
 
-
-    //соединение с базой данных
     public static Connection getConnection() {
         try {
             return DriverManager.getConnection("jdbc:sqlite:src\\main\\resources\\qa.db");
@@ -15,8 +13,6 @@ public class DatabaseService {
         }
     }
 
-
-    //класс, который позволяет выполнять запросы
     public static Statement getStatment() {
         try {
             return getConnection().createStatement();
@@ -25,11 +21,9 @@ public class DatabaseService {
         }
     }
 
-
-    //закрывает базу данных
     public static void closeConnection(Connection connection) {
         try {
-            if (connection != null && !connection.isClosed()) { //проверяем,что база не нулл и не закрыта
+            if (connection != null && !connection.isClosed()) {
                 connection.close();
             }
         } catch (SQLException e) {
