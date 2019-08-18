@@ -44,7 +44,7 @@ public class Owner {
         Owner owner = (Owner) o;
         return age == owner.age &&
                 Objects.equals(car, owner.car) &&
-                Objects.equals(name, owner.name);
+//                Objects.equals(name, owner.name);
     }
 
     @Override
