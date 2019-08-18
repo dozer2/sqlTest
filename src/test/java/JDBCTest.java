@@ -1,6 +1,8 @@
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.function.Executable;
+import org.sqlite.SQLiteException;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -97,16 +99,126 @@ public class JDBCTest {
     }
 
     @Test
-    public void check18thOwner() throws SQLException{
+    public void check18thOwner() throws SQLException {
 
-        ResultSet resultSet3=statement.executeQuery("select owner.age, owner.ownername, car.name\n" +
+        ResultSet resultSet3 = statement.executeQuery("select owner.age, owner.ownername, car.name\n" +
                 "FROM owner\n" +
                 "LEFT join car on car.id_owner=owner.id\n" +
                 "--WHERE owner.age>=1;");
 
-        int age =resultSet3.getInt("age");
-        String owner=resultSet3.getString("ownername");
+        int age = resultSet3.getInt("age");
+        String owner = resultSet3.getString("ownername");
 
-            assertTrue(age>0,"Несовершеннолетний!  ".concat(owner).concat("  DETECTED"));
+        assertTrue(age > 0, "Несовершеннолетний!  ".concat(owner).concat("  DETECTED"));
+    }
+
+    @Test
+    public void insertData() throws SQLException {
+        boolean emptyId = true;
+        Long newId = 0L;
+
+        while (emptyId) {
+
+            newId = System.currentTimeMillis();
+            ResultSet resultSet = statement.executeQuery("SELECT id FROM owner where id =" + newId);
+            emptyId = resultSet.next();
+        }
+        Long finalNewId = newId;
+
+        assertThrows(SQLException.class, new Executable() {
+                    @Override
+                    public void execute() throws Throwable {
+                        try {
+                            boolean result = statement.execute("insert into owner (id,ownername,age) values (" + finalNewId + ",'Oleg', 26); ");
+                        } catch (SQLiteException e) {
+                            System.out.println(e);
+                        }
+                    }
+                }
+        );
+    }
+
+    @Test//тест на проверку возможности добавления автомобиля у которого есть пользователь
+    public void carWithOwnerAlreadyExist() throws SQLException {
+
+        boolean emptyId = true;
+        Long newId = 0L;
+
+        while (emptyId) {
+
+            newId = System.currentTimeMillis();
+            ResultSet resultSet2 = statement.executeQuery("SELECT id FROM owner where id =" + newId);
+            emptyId = resultSet2.next();
+
+        }
+        Long finalNewId = newId;
+        ResultSet resultSet = statement.executeQuery("SELECT car.name, owner.ownername From car left join owner on car.id_owner=owner.id;");
+        while (resultSet.next()) {
+            String carName = resultSet.getString("name");
+            String ownerName = resultSet.getString("ownername");
+
+            if (ownerName != null) {
+
+                assertThrows(SQLException.class, new Executable() {
+                            @Override
+                            public void execute() throws Throwable {
+                                try {
+                                    boolean result = statement.execute("insert into car (id, name ,id_owner) values (" + finalNewId + ", '" + carName + "' , 10);");
+                                } catch (SQLiteException e) {
+                                    System.out.println(e);
+                                }
+                            }
+                        }
+                );
+            }
+        }
+    }
+
+    @Test//тест на проверку возможности изменения автомобиля у пользователя
+    public void editCarOpportunity() throws SQLException {
+        String editedName = "editable CarName";
+
+        ResultSet resultSet = statement.executeQuery("select id, name from car  ");
+        while (resultSet.next()) {
+
+            String nameCar = resultSet.getString("name");
+            int idCar = resultSet.getInt("id");
+            if (nameCar != null) {
+
+                assertThrows(SQLException.class, new Executable() {
+                    @Override
+                    public void execute() throws Throwable {
+                        boolean result = statement.execute("UPDATE car\n" +
+                                "set name ='" + editedName + "'\n" +
+                                "where id =" + idCar);
+                    }
+                });
+            }
+
+        }
+    }
+
+    @Test //тест на проверку  возможности удаления пользователя у которого есть 2 автомобиля
+    public void deleteCarOpportunity() throws SQLException {
+
+        ResultSet resultSet=statement.executeQuery("Select car.*, owner.ownername, count (car.id_owner) as numberOfOwners\n" +
+                "from (car\n" +
+                "      left join owner on car.id_owner=owner.id)\n" +
+                "group by ownername;");
+
+        while (resultSet.next()){
+            int carCounter = resultSet.getInt("numberOfOwners");
+            int idCar= resultSet.getInt("id");
+            int idOwner = resultSet.getInt("id_owner");
+            String ownerName=resultSet.getString("ownername");
+            if(carCounter==2){
+                assertThrows(SQLException.class, new Executable() {
+                    @Override
+                    public void execute() throws Throwable {
+                        boolean result =statement.execute("Delete from owner where ownername='"+ownerName+"';");
+                    }
+                });
+            }
+        }
     }
 }
