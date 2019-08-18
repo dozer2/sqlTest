@@ -110,10 +110,53 @@ public class JDBCTest {
         assertThrows(SQLException.class, new Executable() {
             @Override
             public void execute() throws Throwable {
-                statement.execute(" insert into owner (name,id,age) values ('Vasya', " + finalNewId + ", 26);");
+                statement.execute(" insert into owner (id,name,age) values (" + finalNewId + ", 'Vasya', 26);");
             }
         });
     }
+
+    @Test
+    public void insertNewCar () throws SQLException {
+        boolean emptyId = true;
+        Long newId = 0L;
+        while (emptyId){
+            newId = System.currentTimeMillis();
+            ResultSet resultSet = statement.executeQuery("SELECT id FROM car where id =" + newId);
+            emptyId = resultSet.next();
+        }
+        Long finalNewId = newId;
+        assertThrows(SQLException.class, new Executable() {
+            @Override
+            public void execute() throws Throwable {
+                statement.execute("insert into car (id,name,id_owner) values (" + finalNewId + ", 'Honda', 9);");
+            }
+        });
+    }
+
+    @Test
+    public  void updateCarOwner() throws  SQLException{
+        assertThrows(SQLException.class, new Executable() {
+            @Override
+            public void execute() throws Throwable {
+                statement.execute("UPDATE car SET name=\"Mitsubishi\" where id=1566123619790");
+            }
+        });
+    }
+
+   @Test
+    public void deleteOwnerWithTwoCar() throws SQLException{
+        assertThrows(SQLException.class, new Executable() {
+            @Override
+            public void execute() throws Throwable {
+                statement.execute("DELETE FROM owner WHERE id in(\n" +
+                        "SELECT owner.id\n" +
+                        "FROM car\n" +
+                        "LEFT JOIN owner ON car.id_owner = owner.id\n" +
+                        "GROUP by owner.name\n" +
+                        "HAVING count(owner.name) = 2)");
+            }
+        });
+   }
 
 }
 
