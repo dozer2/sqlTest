@@ -96,5 +96,52 @@ public class JDBCTest {
     }
 
 
-}
+    //Написать тест на проверку возможности добоавления автомобиля у которого есть пользователь
+    @Test
+    public void insertCarWithOwner () throws SQLException {
+        boolean emptyId = true;
+        Long newId = 0L;
+        while (emptyId){
+            newId = System.currentTimeMillis();
+            ResultSet resultSet = statement.executeQuery("SELECT id FROM car where id =" + newId);
+            emptyId = resultSet.next();
+        }
+        Long finalNewId = newId;
+        assertThrows(SQLException.class, new Executable() {
+            @Override
+            public void execute() throws Throwable {
+                statement.execute("insert into car (id,name,id_owner) values (" + finalNewId + ", 'MAZ', 77);");
+            }
+        });
+    }
 
+
+    //Написать тест на проверку возможности изменния автомобиля у пользователя
+    @Test
+    public  void updateCar() throws  SQLException{
+        assertThrows(SQLException.class, new Executable() {
+            @Override
+            public void execute() throws Throwable {
+                statement.execute("UPDATE car SET name= 'TESLA' where id=4;");
+            }
+        }
+        );
+    }
+
+    
+    //написать тест на проверку  возможности удаления пользователя у которого есть 2 автомобиля
+    @Test
+    public void deleteOwnerWithTwoCars() throws SQLException{
+        assertThrows(SQLException.class, new Executable() {
+            @Override
+            public void execute() throws Throwable {
+                statement.execute("SELECT * FROM owner WHERE id in(\n" +
+                        "SELECT owner.id FROM car\n" +
+                        "LEFT JOIN owner ON car.id_owner = owner.id\n" +
+                        "GROUP by owner.name\n" +
+                        "HAVING count(owner.name) = 2);");
+            }
+        }
+        );
+    }
+}
