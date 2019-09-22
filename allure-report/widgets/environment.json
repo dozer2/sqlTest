@@ -1,0 +1,16 @@
+[ {
+  "values" : [ "2.7.0" ],
+  "name" : "allure-report.version"
+}, {
+  "values" : [ "5.5.1" ],
+  "name" : "allure-junit5.version"
+}, {
+  "values" : [ "Windows 10" ],
+  "name" : "OS.version"
+}, {
+  "values" : [ "Apache Maven 3.6.1" ],
+  "name" : "MAVEN.version"
+}, {
+  "values" : [ "jdk1.8.0_221" ],
+  "name" : "JDK.version"
+} ]

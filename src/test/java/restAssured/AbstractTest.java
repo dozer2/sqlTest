@@ -135,5 +135,25 @@ public void readJsonToObject(Double one, Double two) throws IOException {
     getBytesAnnotationWithArgs("object.json");
 }
 
+    @Step("CHECKED CODESTATUS: {code}")
+    public void CheckStatusCode(String one, String two, Integer code) throws IOException {
+      String s=  given()
+                .param("one", one)
+                .param("two", two)
+                .when()
+                .get(getPath())
+              .then()
+              .statusCode(code)
+              .extract()
+              .body()
+              .asString();
+
+    //AllureLogger.logToAllure(s);
+
+    Allure.attachment("Response 2",s);
+    //Allure.addAttachment("Response",s);
+
+    }
+
     abstract String getPath();
 }

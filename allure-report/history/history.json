@@ -1,0 +1,583 @@
+{
+  "49cbe7e230ea2521f3091eec8364edfa" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "d3c1407f5701b323",
+      "status" : "failed",
+      "statusDetails" : "1 expectation failed.\nJSON path result doesn't match.\nExpected: is \"-50.0\"\n  Actual: -5.0\n",
+      "time" : {
+        "start" : 1569169746851,
+        "stop" : 1569169746882,
+        "duration" : 31
+      }
+    } ]
+  },
+  "f54427f94d4d2e7fbf5536160b2976f1" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "d0697c85b545f445",
+      "status" : "broken",
+      "statusDetails" : "No ParameterResolver registered for parameter [java.lang.String arg0] in method [public void restAssured.AbstractTest.CheckStatusCode(java.lang.String,java.lang.String)].",
+      "time" : {
+        "start" : 1569169746996,
+        "stop" : 1569169746997,
+        "duration" : 1
+      }
+    } ]
+  },
+  "64a42ab0e46f1c3c1358f2cc58f097fa" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "50f83d4e2a8bc7f9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1569169747194,
+        "stop" : 1569169747240,
+        "duration" : 46
+      }
+    } ]
+  },
+  "7ac63ba49c9ed86724bc02610cff3dff" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "ca203235e3189bd8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1569169747078,
+        "stop" : 1569169747130,
+        "duration" : 52
+      }
+    } ]
+  },
+  "bc7a0b78076dd1786aab8b57f4a42da1" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "6f9ac81841f564b4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1569169745775,
+        "stop" : 1569169745814,
+        "duration" : 39
+      }
+    } ]
+  },
+  "69ba47751391bff9d72a74fad1cfd6df" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "82b2d0b9d4f2fb95",
+      "status" : "passed",
+      "time" : {
+        "start" : 1569169744991,
+        "stop" : 1569169745706,
+        "duration" : 715
+      }
+    } ]
+  },
+  "8997186dd268fd5e012d2d4a4609c303" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "c4d96638add6763d",
+      "status" : "failed",
+      "statusDetails" : "1 expectation failed.\nJSON path result doesn't match.\nExpected: is \"20.0\"\n  Actual: -12.0\n",
+      "time" : {
+        "start" : 1569169746889,
+        "stop" : 1569169746919,
+        "duration" : 30
+      }
+    } ]
+  },
+  "755b876ff681b3a2feac51062a45419f" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "661ea24099eafe46",
+      "status" : "passed",
+      "time" : {
+        "start" : 1569169746971,
+        "stop" : 1569169746992,
+        "duration" : 21
+      }
+    } ]
+  },
+  "499e106537f1f30da1c61dd683c2f401" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "6c2016ffb55cfe00",
+      "status" : "passed",
+      "time" : {
+        "start" : 1569169746040,
+        "stop" : 1569169746105,
+        "duration" : 65
+      }
+    } ]
+  },
+  "59217a3600a4f956cd512634d494a79f" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "40ad53a982a524be",
+      "status" : "passed",
+      "time" : {
+        "start" : 1569169747350,
+        "stop" : 1569169747451,
+        "duration" : 101
+      }
+    } ]
+  },
+  "ea4659c289afebe6c364aee917fcaa0e" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "edbd69ea3b3aebfa",
+      "status" : "passed",
+      "time" : {
+        "start" : 1569169745723,
+        "stop" : 1569169745768,
+        "duration" : 45
+      }
+    } ]
+  },
+  "492a377d6389f46242c2bf6395de272c" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "b241c56e89f179db",
+      "status" : "passed",
+      "time" : {
+        "start" : 1569169746506,
+        "stop" : 1569169746569,
+        "duration" : 63
+      }
+    } ]
+  },
+  "62669d21ffab48fb3a36481d6751f9aa" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "c4e0f3107b03cbe3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1569169746576,
+        "stop" : 1569169746645,
+        "duration" : 69
+      }
+    } ]
+  },
+  "1d9609535ab6c82895d1f3ab470613d3" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "c25ae735869e27eb",
+      "status" : "passed",
+      "time" : {
+        "start" : 1569169746429,
+        "stop" : 1569169746500,
+        "duration" : 71
+      }
+    } ]
+  },
+  "f883fa0b5e6655871a4a8bf43d5b161a" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "80548f94b86365f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1569169747007,
+        "stop" : 1569169747072,
+        "duration" : 65
+      }
+    } ]
+  },
+  "d95fe568276b088f71e68cfdc67d4957" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "27300dd063d84f59",
+      "status" : "passed",
+      "time" : {
+        "start" : 1569169746124,
+        "stop" : 1569169746244,
+        "duration" : 120
+      }
+    } ]
+  },
+  "93130e9332b7df372362cdb768790880" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "7961524c3d3589bc",
+      "status" : "broken",
+      "statusDetails" : "No ParameterResolver registered for parameter [java.lang.String arg0] in method [public void restAssured.AbstractTest.CheckStatusCode(java.lang.String,java.lang.String)].",
+      "time" : {
+        "start" : 1569169744879,
+        "stop" : 1569169744887,
+        "duration" : 8
+      }
+    } ]
+  },
+  "bdea64c12e0a831d1892c6f6acc0465a" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "5f8948d98dc59afd",
+      "status" : "failed",
+      "statusDetails" : "1 expectation failed.\nJSON path result doesn't match.\nExpected: is \"3.0\"\n  Actual: 4.0\n",
+      "time" : {
+        "start" : 1569169746741,
+        "stop" : 1569169746808,
+        "duration" : 67
+      }
+    } ]
+  },
+  "fdd3a73f31eb0031517158562e1574a6" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "58f3cd7b73a54cb0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1569169742184,
+        "stop" : 1569169744636,
+        "duration" : 2452
+      }
+    } ]
+  },
+  "87b31e49130bf4cce85e645a71d9ec4e" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "3f963bcf7ee02e4c",
+      "status" : "failed",
+      "statusDetails" : "1 expectation failed.\nJSON path operation doesn't match.\nExpected: is \"addition\"\n  Actual: Addition\n",
+      "time" : {
+        "start" : 1569169745868,
+        "stop" : 1569169746021,
+        "duration" : 153
+      }
+    } ]
+  },
+  "e07dfb16c434fe357e8eafdfabbb9d72" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "5ea79ac3daa9d455",
+      "status" : "failed",
+      "statusDetails" : "1 expectation failed.\nJSON path result doesn't match.\nExpected: is \"250.0\"\n  Actual: 55.0\n",
+      "time" : {
+        "start" : 1569169746817,
+        "stop" : 1569169746843,
+        "duration" : 26
+      }
+    } ]
+  },
+  "f93ee601806dc7b7123c9fd06e8388ff" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "1f85242f70a23ab7",
+      "status" : "broken",
+      "statusDetails" : "No ParameterResolver registered for parameter [java.lang.String arg0] in method [public void restAssured.AbstractTest.CheckStatusCode(java.lang.String,java.lang.String)].",
+      "time" : {
+        "start" : 1569169746698,
+        "stop" : 1569169746704,
+        "duration" : 6
+      }
+    } ]
+  },
+  "d257ac8992bdddf2acfd8acd5cd22cc9" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "b7d884001330ecaf",
+      "status" : "passed",
+      "time" : {
+        "start" : 1569169746258,
+        "stop" : 1569169746422,
+        "duration" : 164
+      }
+    } ]
+  },
+  "f4a3fcf17ba723f0ea1c1f6f1c592765" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "2c65fb5c6acb717c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1569169747137,
+        "stop" : 1569169747186,
+        "duration" : 49
+      }
+    } ]
+  },
+  "b2f720776f5b863313a9519af693fbe8" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "73ecf30e1a82b723",
+      "status" : "passed",
+      "time" : {
+        "start" : 1569169747243,
+        "stop" : 1569169747341,
+        "duration" : 98
+      }
+    } ]
+  },
+  "253c1d014d8119ba9197ad40163a2bca" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "a6a94ceefa92b371",
+      "status" : "broken",
+      "statusDetails" : "No ParameterResolver registered for parameter [java.lang.String arg0] in method [public void restAssured.AbstractTest.CheckStatusCode(java.lang.String,java.lang.String)].",
+      "time" : {
+        "start" : 1569169746110,
+        "stop" : 1569169746112,
+        "duration" : 2
+      }
+    } ]
+  },
+  "c415780ca03bde17a259bb0abb4a8b3d" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "373a24642b999903",
+      "status" : "passed",
+      "time" : {
+        "start" : 1569169746654,
+        "stop" : 1569169746683,
+        "duration" : 29
+      }
+    } ]
+  },
+  "ea7655165837910f38e9479947cd58ba" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "12667a2d9526e22c",
+      "status" : "failed",
+      "statusDetails" : "1 expectation failed.\nJSON path result doesn't match.\nExpected: is \"0.0\"\n  Actual: 1.0\n",
+      "time" : {
+        "start" : 1569169746925,
+        "stop" : 1569169746960,
+        "duration" : 35
+      }
+    } ]
+  },
+  "ea6c7be59382e9c9c62e89b6cfe19660" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "453ce6f1895860d2",
+      "status" : "failed",
+      "statusDetails" : "Сумма слагаемых не соответствует ожидаемому значению ==> expected: <true> but was: <false>",
+      "time" : {
+        "start" : 1569169746715,
+        "stop" : 1569169746735,
+        "duration" : 20
+      }
+    } ]
+  },
+  "b9acfe6b2ec1864b58b6efeab3be7944" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "fbc3c1243d9f63df",
+      "status" : "passed",
+      "time" : {
+        "start" : 1569169745820,
+        "stop" : 1569169745860,
+        "duration" : 40
+      }
+    } ]
+  }
+}

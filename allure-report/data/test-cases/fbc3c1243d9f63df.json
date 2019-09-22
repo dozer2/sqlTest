@@ -1,0 +1,116 @@
+{
+  "uid" : "fbc3c1243d9f63df",
+  "name" : "[4] 1, 0, 1",
+  "fullName" : "restAssured.AddTest.addPositive",
+  "historyId" : "b9acfe6b2ec1864b58b6efeab3be7944",
+  "time" : {
+    "start" : 1569169745820,
+    "stop" : 1569169745860,
+    "duration" : 40
+  },
+  "description" : "It is the best Description that you've ever seen",
+  "descriptionHtml" : "<p>It is the best Description that you've ever seen</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "It is the best Description that you've ever seen",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "STEP: CHECKED DATA: 1.0 AND 0.0",
+      "time" : {
+        "start" : 1569169745821,
+        "stop" : 1569169745860,
+        "duration" : 39
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "one",
+        "value" : "1.0"
+      }, {
+        "name" : "two",
+        "value" : "0.0"
+      }, {
+        "name" : "result",
+        "value" : "1.0"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 1,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "CALCULATOR EPIC"
+  }, {
+    "name" : "feature",
+    "value" : "CHECK ADDITION METHODS"
+  }, {
+    "name" : "owner",
+    "value" : "DEMO.JAR"
+  }, {
+    "name" : "story",
+    "value" : "ADDITION METHOD - POSITIVE DATA"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-8H0MF42"
+  }, {
+    "name" : "thread",
+    "value" : "16904@DESKTOP-8H0MF42.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "restAssured.AddTest"
+  }, {
+    "name" : "testClass",
+    "value" : "restAssured.AddTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "addPositive"
+  }, {
+    "name" : "suite",
+    "value" : "restAssured.AddTest"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "URL LINK TO ADDITION METHODS ",
+    "url" : "http://localhost:8080/add?one=1&two=5",
+    "type" : "custom"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "owner" : "DEMO.JAR",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "PASSED",
+      "matchedStatuses" : [ "passed" ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "fbc3c1243d9f63df.json",
+  "parameterValues" : [ ]
+}

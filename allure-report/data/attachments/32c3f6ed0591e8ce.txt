@@ -1,0 +1,6 @@
+{
+    "operation": "division",
+    "oneParam": "1.0",
+    "twoParam": "0.0",
+    "result": "Infinity"
+}

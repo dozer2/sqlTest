@@ -1,0 +1,146 @@
+{
+  "uid" : "c4e0f3107b03cbe3",
+  "name" : "[4] 1, 0, Infinity",
+  "fullName" : "restAssured.DivisionTest.divisionPositive",
+  "historyId" : "62669d21ffab48fb3a36481d6751f9aa",
+  "time" : {
+    "start" : 1569169746576,
+    "stop" : 1569169746645,
+    "duration" : 69
+  },
+  "description" : "It is the best Description that you've ever seen",
+  "descriptionHtml" : "<p>It is the best Description that you've ever seen</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "It is the best Description that you've ever seen",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "STEP: CHECKED DATA: 1.0 AND 0.0",
+      "time" : {
+        "start" : 1569169746577,
+        "stop" : 1569169746614,
+        "duration" : 37
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "one",
+        "value" : "1.0"
+      }, {
+        "name" : "two",
+        "value" : "0.0"
+      }, {
+        "name" : "result",
+        "value" : "Infinity"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "STEP: WRITE JSON TO FILE AND ADD TO ATTACHMENT CHECKED DATA: 1.0 AND 0.0",
+      "time" : {
+        "start" : 1569169746614,
+        "stop" : 1569169746645,
+        "duration" : 31
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "7924f5e36fddbc23",
+        "name" : "getBytes",
+        "source" : "7924f5e36fddbc23.txt",
+        "type" : "text/plain",
+        "size" : 103
+      }, {
+        "uid" : "32c3f6ed0591e8ce",
+        "name" : "Attachment JSON",
+        "source" : "32c3f6ed0591e8ce.txt",
+        "type" : "application/json",
+        "size" : 103
+      } ],
+      "parameters" : [ {
+        "name" : "one",
+        "value" : "1.0"
+      }, {
+        "name" : "two",
+        "value" : "0.0"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 2,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "CALCULATOR EPIC"
+  }, {
+    "name" : "feature",
+    "value" : "CHECK DIVISION METHODS"
+  }, {
+    "name" : "owner",
+    "value" : "DEMO.JAR"
+  }, {
+    "name" : "story",
+    "value" : "DIVISION METHOD - POSITIVE DATA"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-8H0MF42"
+  }, {
+    "name" : "thread",
+    "value" : "16904@DESKTOP-8H0MF42.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "restAssured.DivisionTest"
+  }, {
+    "name" : "testClass",
+    "value" : "restAssured.DivisionTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "divisionPositive"
+  }, {
+    "name" : "suite",
+    "value" : "restAssured.DivisionTest"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "URL LINK TO DIVISION METHODS ",
+    "url" : "http://localhost:8080/division?one=1&two=5",
+    "type" : "custom"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "owner" : "DEMO.JAR",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "PASSED",
+      "matchedStatuses" : [ "passed" ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "c4e0f3107b03cbe3.json",
+  "parameterValues" : [ ]
+}

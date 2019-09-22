@@ -21,7 +21,8 @@ public class SubstructTest extends AbstractTest{
     public void substructPositive(Double one, Double two,Double result) throws IOException {
         positiveTest(one,two,result);
         readJson(one, two);
-        readJsonToObject(one, two);
+
+
     }
 
     @Test
@@ -30,6 +31,17 @@ public class SubstructTest extends AbstractTest{
     @Description("It is the best Description that you've ever seen")
     public void substrPositiveTestAllData() throws IOException {
         positiveTestAllData(4d,2d,2d,"substract");
+
+    }
+
+    @ParameterizedTest
+    @CsvSource({ "g,b,400", "1,,500"})
+    @Story(value = "ADDITION METHOD - NEGATIVE DATA")
+    @Description("It is the best Description that you've ever seen")
+    @Severity(SeverityLevel.CRITICAL)
+    public void Negative(String one, String two,Integer code) throws IOException {
+        CheckStatusCode(one, two,code);
+
     }
 
 

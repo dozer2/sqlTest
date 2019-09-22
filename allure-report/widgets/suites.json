@@ -1,0 +1,48 @@
+{
+  "total" : 4,
+  "items" : [ {
+    "uid" : "a61be1fbb012425c197f0144ece0bd4c",
+    "name" : "restAssured.MultiplyTest",
+    "statistic" : {
+      "failed" : 6,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 8
+    }
+  }, {
+    "uid" : "ec6877f0af9347f450e5df853250ff5b",
+    "name" : "restAssured.AddTest",
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 5,
+      "unknown" : 0,
+      "total" : 7
+    }
+  }, {
+    "uid" : "e6a45ea2fa683aa58fdc83633383b7a7",
+    "name" : "restAssured.SubstructTest",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 7,
+      "unknown" : 0,
+      "total" : 8
+    }
+  }, {
+    "uid" : "f4a0fb6d5d96a9d7b711b769fd8a3e77",
+    "name" : "restAssured.DivisionTest",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 6,
+      "unknown" : 0,
+      "total" : 7
+    }
+  } ]
+}

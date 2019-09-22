@@ -1,0 +1,59 @@
+{
+  "total" : 5,
+  "items" : [ {
+    "uid" : "66a2e2ea2143eba7c73edcc76d4817e1",
+    "name" : "FAILED",
+    "statistic" : {
+      "failed" : 7,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 7
+    }
+  }, {
+    "uid" : "3e5c0fe25e9532d105ac5290fcd38354",
+    "name" : "Expected JSON path not Equals",
+    "statistic" : {
+      "failed" : 6,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 6
+    }
+  }, {
+    "uid" : "390fc614bfda70cbb7f1886f0e01ff9d",
+    "name" : "expected: <true> but was: <false>",
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    }
+  }, {
+    "uid" : "9399fd7773d0ade5d9251931d23537a2",
+    "name" : "BROKEN",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 4,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 4
+    }
+  }, {
+    "uid" : "ff473ae33831bab0fa48a51203b2ac5b",
+    "name" : "PASSED",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 19,
+      "unknown" : 0,
+      "total" : 19
+    }
+  } ]
+}

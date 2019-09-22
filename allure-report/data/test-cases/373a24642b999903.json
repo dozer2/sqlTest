@@ -1,0 +1,91 @@
+{
+  "uid" : "373a24642b999903",
+  "name" : "structIsValid()",
+  "fullName" : "restAssured.MultiplyTest.structIsValid",
+  "historyId" : "c415780ca03bde17a259bb0abb4a8b3d",
+  "time" : {
+    "start" : 1569169746654,
+    "stop" : 1569169746683,
+    "duration" : 29
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "c1f2e52f071b3c87",
+      "name" : "Attachment JSON",
+      "source" : "c1f2e52f071b3c87.txt",
+      "type" : "application/json",
+      "size" : 411
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "CALCULATOR EPIC"
+  }, {
+    "name" : "feature",
+    "value" : "CHECK MULTIPLY METHODS"
+  }, {
+    "name" : "owner",
+    "value" : "DEMO.JAR"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-8H0MF42"
+  }, {
+    "name" : "thread",
+    "value" : "16904@DESKTOP-8H0MF42.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "restAssured.MultiplyTest"
+  }, {
+    "name" : "testClass",
+    "value" : "restAssured.MultiplyTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "structIsValid"
+  }, {
+    "name" : "suite",
+    "value" : "restAssured.MultiplyTest"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "URL LINK TO MULTIPLY METHODS ",
+    "url" : "http://localhost:8080/multiply?one=1&two=5",
+    "type" : "custom"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "owner" : "DEMO.JAR",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "PASSED",
+      "matchedStatuses" : [ "passed" ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "373a24642b999903.json",
+  "parameterValues" : [ ]
+}

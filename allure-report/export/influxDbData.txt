@@ -1,0 +1,16 @@
+launch_status failed=7 1569169822000000000
+launch_status broken=4 1569169822000000000
+launch_status passed=19 1569169822000000000
+launch_status skipped=0 1569169822000000000
+launch_status unknown=0 1569169822000000000
+launch_time duration=5267 1569169822000000000
+launch_time min_duration=1 1569169822000000000
+launch_time max_duration=2452 1569169822000000000
+launch_time sum_duration=4683 1569169822000000000
+launch_problems expected:_<true>_but_was:_<false>=1 1569169822000000000
+launch_problems failed=7 1569169822000000000
+launch_problems expected_json_path_not_equals=6 1569169822000000000
+launch_problems broken=4 1569169822000000000
+launch_problems passed=19 1569169822000000000
+launch_retries retries=0 1569169822000000000
+launch_retries run=30 1569169822000000000

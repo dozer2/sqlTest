@@ -1,0 +1,6 @@
+{
+    "operation": "substract",
+    "oneParam": "-10.0",
+    "twoParam": "5.0",
+    "result": "-15.0"
+}

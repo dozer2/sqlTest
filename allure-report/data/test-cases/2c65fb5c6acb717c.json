@@ -1,0 +1,149 @@
+{
+  "uid" : "2c65fb5c6acb717c",
+  "name" : "[3] -10, -2, -8",
+  "fullName" : "restAssured.SubstructTest.substructPositive",
+  "historyId" : "f4a3fcf17ba723f0ea1c1f6f1c592765",
+  "time" : {
+    "start" : 1569169747137,
+    "stop" : 1569169747186,
+    "duration" : 49
+  },
+  "description" : "It is the best Description that you've ever seen",
+  "descriptionHtml" : "<p>It is the best Description that you've ever seen</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "It is the best Description that you've ever seen",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "STEP: CHECKED DATA: -10.0 AND -2.0",
+      "time" : {
+        "start" : 1569169747138,
+        "stop" : 1569169747167,
+        "duration" : 29
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "one",
+        "value" : "-10.0"
+      }, {
+        "name" : "two",
+        "value" : "-2.0"
+      }, {
+        "name" : "result",
+        "value" : "-8.0"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "STEP: WRITE JSON TO FILE AND ADD TO ATTACHMENT CHECKED DATA: -10.0 AND -2.0",
+      "time" : {
+        "start" : 1569169747167,
+        "stop" : 1569169747185,
+        "duration" : 18
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "db612c1eea170417",
+        "name" : "getBytes",
+        "source" : "db612c1eea170417.txt",
+        "type" : "text/plain",
+        "size" : 103
+      }, {
+        "uid" : "4e2651cd394fa963",
+        "name" : "Attachment JSON",
+        "source" : "4e2651cd394fa963.txt",
+        "type" : "application/json",
+        "size" : 103
+      } ],
+      "parameters" : [ {
+        "name" : "one",
+        "value" : "-10.0"
+      }, {
+        "name" : "two",
+        "value" : "-2.0"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 2,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "CALCULATOR EPIC"
+  }, {
+    "name" : "owner",
+    "value" : "DEMO.JAR"
+  }, {
+    "name" : "feature",
+    "value" : "CHECK SUBSTRACTION METHODS"
+  }, {
+    "name" : "story",
+    "value" : "MULTIPLY METHOD - POSITIVE DATA"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-8H0MF42"
+  }, {
+    "name" : "thread",
+    "value" : "16904@DESKTOP-8H0MF42.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "restAssured.SubstructTest"
+  }, {
+    "name" : "testClass",
+    "value" : "restAssured.SubstructTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "substructPositive"
+  }, {
+    "name" : "suite",
+    "value" : "restAssured.SubstructTest"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "URL LINK TO SUBSTRACTION METHODS ",
+    "url" : "http://localhost:8080/substract?one=1&two=5",
+    "type" : "custom"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "owner" : "DEMO.JAR",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "PASSED",
+      "matchedStatuses" : [ "passed" ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "2c65fb5c6acb717c.json",
+  "parameterValues" : [ ]
+}
