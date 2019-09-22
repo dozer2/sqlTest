@@ -7,6 +7,7 @@
       <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/resources" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/test/resources" type="java-test-resource" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
     <orderEntry type="inheritedJdk" />
@@ -21,9 +22,9 @@
     <orderEntry type="library" scope="RUNTIME" name="Maven: org.apache.tika:tika-core:1.20" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: org.jooq:joor-java-8:0.9.10" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: org.freemarker:freemarker:2.3.28" level="project" />
-    <orderEntry type="library" name="Maven: org.slf4j:slf4j-log4j12:1.7.5" level="project" />
-    <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.5" level="project" />
-    <orderEntry type="library" name="Maven: log4j:log4j:1.2.17" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.slf4j:slf4j-log4j12:1.7.21" level="project" />
+    <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.21" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: log4j:log4j:1.2.17" level="project" />
     <orderEntry type="library" name="Maven: org.xerial:sqlite-jdbc:3.28.0" level="project" />
     <orderEntry type="library" name="Maven: com.mashape.unirest:unirest-java:1.4.9" level="project" />
     <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpclient:4.5.2" level="project" />
@@ -78,5 +79,6 @@
     <orderEntry type="library" name="Maven: io.qameta.allure:allure-junit5:2.13.0" level="project" />
     <orderEntry type="library" name="Maven: io.qameta.allure:allure-junit-platform:2.13.0" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: org.junit.platform:junit-platform-launcher:1.4.0" level="project" />
+    <orderEntry type="library" name="Maven: org.aspectj:aspectjweaver:1.9.4" level="project" />
   </component>
 </module>

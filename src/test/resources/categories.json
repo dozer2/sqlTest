@@ -1,0 +1,39 @@
+[
+  {
+    "name": "PASSED",
+    "matchedStatuses": ["passed"]
+  },
+  {
+    "name": "BROKEN",
+    "matchedStatuses": ["broken"]
+  },
+
+  {
+    "name": "SKIPPED",
+    "matchedStatuses": ["skipped"]
+  },
+
+  {
+    "name": "FAILED",
+    "matchedStatuses": ["failed"]
+  },
+
+  {
+    "name": "Expected JSON path not Equals",
+
+    "messageRegex": ".*JSON path.*"
+  },
+
+  {
+    "name": "SQLException",
+
+    "messageRegex": ".*SQLException.*"
+  },
+
+  {
+    "name": "expected: <true> but was: <false>",
+
+    "messageRegex": ".*expected: <true> but was: <false>.*"
+  }
+
+]

@@ -1,31 +1,37 @@
 package restAssured;
 
-import io.qameta.allure.Description;
-import io.qameta.allure.Epic;
-import io.qameta.allure.Feature;
-import io.qameta.allure.Story;
+import io.qameta.allure.*;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 
-@Epic("222222222222222222")
-@Feature("33333333333333333333333333")
+import java.io.IOException;
+
+@Epic("CALCULATOR EPIC")
+@Feature("CHECK SUBSTRACTION METHODS")
+@Owner("DEMO.JAR")
+@Link(name = "URL LINK TO SUBSTRACTION METHODS ", url = "http://localhost:8080/substract?one=1&two=5")
 public class SubstructTest extends AbstractTest{
 
     @ParameterizedTest
     @CsvSource({ "50,5,45", "-10,5,-15", "-10,-2,-8","1,0,1"})
-    @Story("11111111111111111111111")
-    @Description("traalalala")
-    public void substructPositive(Double one, Double two,Double result) {
+    @Story("MULTIPLY METHOD - POSITIVE DATA")
+    @Description("It is the best Description that you've ever seen")
+    @Severity(SeverityLevel.CRITICAL)
+    public void substructPositive(Double one, Double two,Double result) throws IOException {
         positiveTest(one,two,result);
+        readJson(one, two);
+        readJsonToObject(one, two);
     }
 
     @Test
-    @Story("555555555555555555555555")
-    @Description("traalalala")
-    public void substrPositiveTestAllData() {
+    @Story("FIELD VALIDATION")
+    @Severity(SeverityLevel.BLOCKER)
+    @Description("It is the best Description that you've ever seen")
+    public void substrPositiveTestAllData() throws IOException {
         positiveTestAllData(4d,2d,2d,"substract");
     }
+
 
     @Override
     String getPath() {
